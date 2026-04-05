@@ -7,7 +7,7 @@ import (
     "strings"
 
     "github.com/charmbracelet/lipgloss"
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/inspector"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/inspector"
     "github.com/spf13/cobra"
 )
 

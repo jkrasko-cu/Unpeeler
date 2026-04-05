@@ -6,8 +6,8 @@ import (
     "strings"
 
     "github.com/charmbracelet/lipgloss"
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/compressor"
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/detector"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/compressor"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/detector"
     "github.com/spf13/cobra"
 )
 
@@ -47,7 +47,7 @@ var wrapCmd = &cobra.Command{
             current = out
         }
 
-        footer := "\n" + dim.Render(fmt.Sprintf("  💾 Output: %s", current))
+        footer := "\n" + dim.Render(fmt.Sprintf("Output: %s", current))
         fmt.Println(box.Render(header + "\n" + body + footer))
     },
 }

@@ -5,7 +5,7 @@ import (
     "os"
 
     "github.com/charmbracelet/lipgloss"
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/stringSearch"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/stringSearch"
     "github.com/spf13/cobra"
 )
 

@@ -4,8 +4,8 @@ import (
     "fmt"
     "os"
 
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/detector"
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/entropy"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/detector"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/entropy"
 )
 
 type Result struct {

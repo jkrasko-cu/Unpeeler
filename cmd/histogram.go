@@ -7,7 +7,7 @@ import (
     "strings"
 
     "github.com/charmbracelet/lipgloss"
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/entropy"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/entropy"
     "github.com/spf13/cobra"
 )
 

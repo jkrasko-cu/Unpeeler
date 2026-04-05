@@ -9,18 +9,18 @@ import (
     "github.com/charmbracelet/bubbles/spinner"
     tea "github.com/charmbracelet/bubbletea"
     "github.com/charmbracelet/lipgloss"
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/decompressor"
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/detector"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/decompressor"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/detector"
 )
 
 var (
-    titleStyle   = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("205")).Padding(0, 1)
+    titleStyle   = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("34")).Padding(0, 1)
     doneStyle    = lipgloss.NewStyle().Foreground(lipgloss.Color("42"))
-    layerStyle   = lipgloss.NewStyle().Foreground(lipgloss.Color("81"))
-    dimStyle     = lipgloss.NewStyle().Foreground(lipgloss.Color("240"))
+    layerStyle   = lipgloss.NewStyle().Foreground(lipgloss.Color("22"))
+    dimStyle     = lipgloss.NewStyle().Foreground(lipgloss.Color("22"))
     successStyle = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("42"))
     errorStyle   = lipgloss.NewStyle().Foreground(lipgloss.Color("196"))
-    boxStyle     = lipgloss.NewStyle().Border(lipgloss.RoundedBorder()).Padding(1, 2).BorderForeground(lipgloss.Color("62"))
+    boxStyle     = lipgloss.NewStyle().Border(lipgloss.RoundedBorder()).Padding(1, 2).BorderForeground(lipgloss.Color("34"))
 )
 
 type Layer struct {
@@ -51,7 +51,7 @@ type processMsg struct {
 func NewModel(input, output string) Model {
     s := spinner.New()
     s.Spinner = spinner.Dot
-    s.Style = lipgloss.NewStyle().Foreground(lipgloss.Color("205"))
+    s.Style = lipgloss.NewStyle().Foreground(lipgloss.Color("34"))
     return Model{
         inputFile: input,
         outputDir: output,

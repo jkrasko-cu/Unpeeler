@@ -5,7 +5,7 @@ import (
     "os"
 
     "github.com/charmbracelet/lipgloss"
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/hexdump"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/hexdump"
     "github.com/spf13/cobra"
 )
 

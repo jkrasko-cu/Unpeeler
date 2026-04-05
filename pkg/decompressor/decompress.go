@@ -13,7 +13,7 @@ import (
 
     "github.com/klauspost/compress/zstd"
     "github.com/ulikunitz/xz"
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/detector"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/detector"
 )
 
 func Decompress(inputPath, outputDir string, format detector.Format) (string, error) {

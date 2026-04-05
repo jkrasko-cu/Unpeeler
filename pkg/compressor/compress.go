@@ -10,7 +10,7 @@ import (
     "os"
     "path/filepath"
 
-    "github.com/jkrasko-cu/File-Systems-CLI-Tool/detector"
+    "github.com/jkrasko-cu/File-Systems-CLI-Tool/pkg/detector"
     "github.com/klauspost/compress/zstd"
     "github.com/ulikunitz/xz"
 )
